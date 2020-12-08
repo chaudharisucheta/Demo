@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            text-align: center;
+            color:brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Registration</h1>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="city">City</label>
+        <input type="text" id="city">
+
+        <input type="button" value="Display" onclick="display()">
+    </form>
+
+    <p id="user"></p>
+    <script>
+        function display(){
+            var name = document.getElementById("name").value
+            var city=document.getElementById("city").value
+            
+            document.getElementById("user").innerHTML="Name: "+ name + " City :"+ city
+
+        }
+    </script>
+</body>
+</html>

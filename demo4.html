@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+
+        ul{
+            list-style-type: square;
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="https://www.google.com" target="_blank">Go to google</a>
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Amit</td>
+            <td>20</td>
+            <td>Pune</td>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>30</td>
+            <td>Mumbai</td>
+        </tr>
+    </table>
+
+
+    <table>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Subjects</th>
+            <th rowspan="2">Total</th>
+        </tr>
+        <tr>
+            <th>Maths</th>
+            <th>Science</th>
+        </tr>
+        <tr>
+            <td>ABC</td>
+            <td>40</td>
+            <td>50</td>
+            <td>90</td>
+        </tr>
+    </table>
+
+
+    <h5>Countries</h5>
+    <ul >
+        <li>India
+            <ul>
+                <li>Maharashtra
+                    <ul>
+                        <li>Pune</li>
+                        <li>Thane</li>
+                        <li>Nagpur</li>
+                    </ul>
+                </li>
+                <li>Delhi</li>
+                <li>Gujrat</li>
+            </ul>
+        </li>
+        <li>USA</li>
+        <li>Japan</li>
+    </ul>
+
+    <ol type="I">
+        <li>India</li>
+        <li>USA</li>
+        <li>Japan</li>
+    </ol>
+
+
+
+    <form>
+        <label for="name">Name</label>
+        <input type="text">
+
+        <label for="city">City</label>
+        <input type="text">
+
+        <label for="email">Email</label>
+        <input type="email">
+
+        <input type="button" value="Submit">
+    </form>
+
+</body>
+</html>
