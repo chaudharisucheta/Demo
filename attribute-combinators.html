@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute selectors</title>
+    <style>
+       header>p{
+        background-color: cadetblue;                /*Direct Child   */
+       }
+       header p + p{
+           color:crimson;      /*Adjacent sibiling   */
+       }
+
+       header ~ section{
+            border-left:7px solid darkblue;          /*general sibiling   */
+            
+       }
+
+       article.article-one > p + p{
+           border: 10px solid red;
+       }
+
+
+       [id="header-one"]{
+           background-color: rosybrown;
+       }
+
+       [class^="h"]{
+           border-bottom:6px solid  saddlebrown;
+       }
+
+       [class$="one"]{
+           background-color: slategray;
+       }
+
+      [class*="tic"]{
+        background-color: steelblue;
+      }
+
+     section article.article-one a[href^="d"]{
+          color:violet;
+      }
+
+     
+
+    </style>
+</head>
+<body>
+    <header class="header-one">
+        <h1>Heading</h1>
+        <p>paragraph inside header
+            <ul>
+                <li><a href="datalist.html">HTML</a></li>
+                <li>CSS</li>
+            </ul>
+        </p>
+        <p>inside header paragraph 2</p>
+    </header>
+
+    <section id="section-one">
+        <article class="article-one">
+            <p>paragraph inside article -article one</p>
+            <p>one more p</p>
+            <img src="blog-writing.jpg" alt="">
+            <p>paragraph inside article - article one</p>
+            <ul>
+                <li><a href="demo.html">Link</a></li>
+            </ul>
+        </article>
+        <article class="article-two">
+            <p>paragraph inside article two</p>
+        </article>
+        <p>paragraph inside section</p>
+    </section>
+    <p>paragraph outside section</p>
+
+    <section>
+        <p>another section</p>
+    </section>
+
+</body>
+</html>
