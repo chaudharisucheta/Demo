@@ -1,0 +1,57 @@
+.heading {
+  text-align: center;
+}
+
+.navbar {
+  height: 50px;
+  background: whitesmoke;
+}
+
+ul.navbar > li {
+  display: inline;
+  position: relative;
+  top: 25%;
+  padding-right: 70px;
+}
+
+.navbar > li > a {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+}
+
+.footer {
+  background: whitesmoke;
+  width: 100%;
+  position: absolute;
+  top: 85%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main {
+  padding: 10px;
+  font-size: 18px;
+  display: flex;
+  /* background-color: darkgrey; */
+}
+
+.one {
+  float: left;
+  width: 70%;
+  padding: 10px;
+  background-color: lightgray;
+}
+
+.two {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  background-color: darkgrey;
+}
+
+.three {
+  background-color: lightgray;
+  width: 20%;
+  padding: 5px;
+}

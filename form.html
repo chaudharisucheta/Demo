@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+       <h1>User Registration</h1>
+
+       <!-- button,checkbox,radio,color,date,datetime-local,email,file,month,number,password,range,reset,submit,time,week -->
+       <!-- textarea ,select,optgroup,button -->
+        <form>
+            <label for="firstname">FirstName</label>
+            <input type="text"><br><br>
+
+            <label for="lastname">LastName</label>
+            <input type="text"><br><br>
+
+            <label for="city">City</label>
+            <input type="text"><br> <br>
+
+            <label for="email">Email</label>
+            <input type="email"><br><br>
+
+            <label for="password">Password</label>
+            <input type="password"><br><br>
+
+
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="gender">Male</label><br><br>
+
+            <input type="radio" name="gender" id="female" value="female"> 
+            <label for="gender">Female</label>    <br><br>
+
+
+            <label for="hobbies">Hobbies</label><br>
+            <input type="checkbox" id="painting" value="painting">
+            <label>Painting</label><br>
+
+            <input type="checkbox" id="rowing" value="rowing">
+            <label>Rowing</label><br>
+
+            <input type="checkbox" id="sketching" value="sketching">
+            <label>Sketching</label><br>
+
+
+            <input type="date"><br>
+            <input type="datetime-local"><br>
+            <input type="month"><br>
+            <input type="color"><br>
+            <input type="file"><br>
+            <input type="number">
+
+            <input type="range"><br><br>
+            
+            <label for="comments">Comments</label><br>
+          <textarea name="comments" id="comments" cols="20" rows="5"></textarea><br><br>
+
+
+          <select name="cities" id="cities">
+              <optgroup label="Maharshtra">
+              <option value="Pune">Pune City</option>
+              <option value="Thane">Thane City</option>
+              <option value="nasik">Nasik City</option>
+            </optgroup>
+            <optgroup label="Gujrat">
+                <option value="Surat">Surat City</option>
+              <option value="Ahmedabad">Ahmedabad City</option>
+              <option value="Baroda">Baroda City</option>
+            </optgroup>
+          </select>
+
+
+            <button type="button" value="Submit"><img src="chipotle.jpg" alt=""></button>
+
+            <input type="button" value="Save">
+
+
+
+            
+
+
+            
+        </form>
+    </body>
+</html>
